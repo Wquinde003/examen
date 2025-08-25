@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cajero</title>
+  <link rel="stylesheet" href="/public/base.css" />
+  <link rel="stylesheet" href="cajero.css" />
+  <script src="/public/js/api.js"></script>
+  <script defer src="cajero.js"></script>
+</head>
+
+<body>
+  <div class="wrap card">
+    <header class="row between">
+      <div>
+        <h2>Cajero</h2>
+        <div class="pipeline small">
+          <span class="badge b-gray">CREADO</span>
+          <span class="sep">→</span>
+          <span class="badge b-blue">PAGADO</span>
+          <span class="sep">→</span>
+          <span class="badge b-gold">EN COCINA</span>
+          <span class="sep">→</span>
+          <span class="badge b-green">LISTO</span>
+          <span class="sep">→</span>
+          <span class="badge b-teal">DESPACHADO</span>
+        </div>
+      </div>
+      <div class="row">
+        <button class="secondary" id="btnRef">Refrescar</button>
+        <button id="btnOut">Salir</button>
+      </div>
+    </header>
+
+    <h3>Pedidos</h3>
+    <div id="pedidos" class="list"></div>
+
+  </div>
+</body>
+
+</html>

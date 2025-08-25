@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Repartidor – Pedidos</title>
+
+  <link rel="stylesheet" href="/public/base.css" />
+  <link rel="stylesheet" href="/public/repartidor/repartidor.css" />
+</head>
+
+<body>
+  <div class="container card page">
+    <div class="page-head row between center">
+      <div>
+        <h2 class="title">Repartidor</h2>
+        <div class="subtitle">– Pedidos</div>
+      </div>
+      <div class="row head-actions">
+        <button id="btnRef" class="secondary">Refrescar</button>
+        <button id="btnOut">Salir</button>
+      </div>
+    </div>
+
+    <div id="pedidos" class="list"></div>
+  </div>
+
+  <script src="/public/js/api.js"></script>
+  <script src="/public/repartidor/repartidor.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menú</title>
+  <link rel="stylesheet" href="/public/base.css" />
+  <link rel="stylesheet" href="/public/menu/menu.css" />
+  <script src="/public/js/api.js"></script>
+  <script defer src="/public/menu/menu.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Menú</h1>
+    <div class="actions">
+      <a class="btn ghost" href="/public/tracking/tracking.html">Mis pedidos</a>
+      <button id="btnRef" class="btn secondary" type="button">Refrescar</button>
+      <button id="btnOut" class="btn" type="button">Salir</button>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <div class="card-header">
+        <h2>Catálogo</h2>
+        <div class="tools">
+          <input id="q" class="input" type="search" placeholder="Buscar producto..." />
+        </div>
+      </div>
+      <div id="catalogo" class="catalog"></div>
+      <div id="emptyCat" class="empty" hidden>No hay productos para mostrar.</div>
+    </section>
+
+    <aside class="card">
+      <div class="card-header">
+        <h2>Carrito</h2>
+      </div>
+
+      <div id="cart" class="cart"></div>
+      <div id="emptyCart" class="empty">Tu carrito está vacío.</div>
+
+      <div class="totals">
+        <div class="row between">
+          <span>Total</span>
+          <b id="total">$0.00</b>
+        </div>
+        <div class="row gap">
+          <button id="btnClear" class="btn ghost" type="button" disabled>Vaciar</button>
+          <button id="btnOrder" class="btn" type="button" disabled>Crear pedido</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+
+</html>
